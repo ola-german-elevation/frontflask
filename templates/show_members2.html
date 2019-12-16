@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raspberries Pis</title>
+</head>
+
+<body>
+    <h1>Members - Show ALl</h1>
+
+
+
+
+    <table>
+    <thead><tr><th>Name</th><th>Email</th></tr></thead>
+    <tbody>
+    {% for member in members %}
+        <tr><td>{{ member.name }}</td><td>{{ member.email }}</td></tr>
+
+    {% endfor %}
+
+    </tbody>
+    </table>
+</body>
+</html>

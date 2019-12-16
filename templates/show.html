@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raspberries Pis</title>
+</head>
+
+<body>
+    <h1>Raspberries Pis List - Show ALl</h1>
+
+
+
+
+    <table>
+    <thead><tr><th>Serial</th><th>Wlan</th></tr></thead>
+    <tbody>
+    {% for rasp in raspberries %}
+        <tr><td>{{ rasp.serial }}</td><td>{{rasp.wlan}}</td></tr>
+
+    {% endfor %}
+
+    </tbody>
+    </table>
+</body>
+</html>
